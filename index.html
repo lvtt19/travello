@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>GULP</title>
+   <link rel="stylesheet" href="./css/main.css" />
+</head>
+
+<body>
+   <div class="wrapper">
+      <header class="header">
+   <div class="container">
+      <div class="header__body">
+         <div class="header__logo logo">
+            <img src="./../img/logo.svg" alt="logo">
+         </div>
+         <nav class="header__menu menu">
+            <ul class="menu__list">
+               <li class="menu__item"><a data-goto=".destinations" class="menu__link">Desitnations</a></li>
+               <li class="menu__item"><a data-goto=".blockname" class="menu__link">Hotels</a></li>
+               <li class="menu__item"><a data-goto=".blockname" class="menu__link">Flights</a></li>
+               <li class="menu__item"><a data-goto=".howtobook" class="menu__link">Bookings</a></li>
+            </ul>
+         </nav>
+         <div class="header__account-lang" data-da=".menu__list,991.98,last">
+            <button class="header__account">Log in</button>
+            <select name="language" class="header__select">
+               <option value="english" class="header__lang">EN</option>
+               <option value="chinese" class="header__lang">ES</option>
+               <option value="spanish" class="header__lang">CH</option>
+            </select>
+         </div>
+         <button class="menu__menu-burger">
+            <span></span>
+         </button>
+      </div>
+   </div>
+
+   <!-- POPUP ACCOUNT -->
+   <div class="popup">
+   <div class="popup-login__body">
+      <button class="popup-login__close">X</button>
+      <div class="popup-login login">
+         <h2 class="popup-login__login">Log in</h2>
+         <form action="#">
+            <div class="popup-login__input-area input-area">
+               <input type="email" required class="input-area__input">
+               <label class="input-area__label">Email</label>
+            </div>
+            <div class="popup-login__input-area">
+               <input type="password" required class="input-area__input">
+               <label class="input-area__label">Password</label>
+            </div>
+            <div class="popup-login__remember-forgot remember-forgot">
+               <label class="remember-forgot__label"><input type="checkbox" required class="remember-forgot__input">
+                  Remember me</label>
+               <a href="#!" class="remember-forgot__link">Forgot password?</a>
+            </div>
+            <button class="popup-login__btn" type="submit">Log in</button>
+            <div class="popup-login__login-register">
+               <p class="login-register__text">Don't have an account?</p> <a href="#!" class="login-register__register-link">Register</a>
+            </div>
+         </form>
+      </div>
+
+      <div class="popup-login signup">
+         <h2 class="popup-login__login">Registration</h2>
+         <form action="#">
+            <div class="popup-login__input-area input-area">
+               <input type="text" required class="input-area__input">
+               <label class="input-area__label">Username</label>
+            </div>
+            <div class="popup-login__input-area input-area">
+               <input type="email" required class="input-area__input">
+               <label class="input-area__label">Email</label>
+            </div>
+            <div class="popup-login__input-area">
+               <input type="password" required class="input-area__input">
+               <label class="input-area__label">Password</label>
+            </div>
+            <div class="popup-login__remember-forgot remember-forgot">
+               <label class="remember-forgot__label"><input type="checkbox" required class="remember-forgot__input">
+                  I agree to the terms and conditions</label>
+            </div>
+            <button class="popup-login__btn" type="submit">Sign up</button>
+            <div class="popup-login__login-register">
+               <p class="login-register__text">Already have an account?</p> <a href="#!"
+                  class="login-register__login-link">Log in</a>
+            </div>
+         </form>
+      </div>
+   </div>
+</div>
+</header>
+      <main>
+         <div class="hero">
+   <div class="container">
+      <div class="hero__body">
+         <div class="hero__content">
+            <div class="hero__suptitle">Best Destinations around the world</div>
+            <h1 class="hero__title">Travel, <span class="enjoy">enjoy</span> and live a new and full life</h1>
+            <div class="hero__text">Built Wicket longer admire do barton vanity itself do in it. Preferred to sportsmen
+               it engrossed listening. Park gate
+               sell they west hard for the.</div>
+            <div class="hero__button-vid">
+               <a href="#!" class="hero__btn">Find out more</a>
+               <button class="hero__vid icon-play">Play demo</button>
+            </div>
+         </div>
+         <div class="hero__pic">
+            <img src="./../img/header-girl.png" alt="girl">
+         </div>
+      </div>
+   </div>
+</div>
+         <div class="offer">
+   <div class="container">
+      <div class="offer__body">
+         <div class="offer__suptitle suptitle">category</div>
+         <h2 class="offer__title title">We Offer Best Services</h2>
+         <div class="offer__services service-offer">
+            <div class="service-offer__block">
+               <div class="service-offer__icon service-offer__icon--satellite">
+                  <img src="./../img/iconpics/satellite-dish.svg" alt="satellite">
+               </div>
+               <h3 class="service-offer__title">Calculated Weather</h3>
+               <div class="service-offer__text">Built Wicket longer admire do barton vanity itself do in it.</div>
+            </div>
+            <div class="service-offer__block plane-block">
+               <div class="service-offer__icon service-offer__icon--plane">
+                  <img src="./../img/iconpics/plane.svg" alt="plane">
+               </div>
+               <h3 class="service-offer__title">Best Flights</h3>
+               <div class="service-offer__text">Engrossed listening. Park gate sell they west hard for the.</div>
+            </div>
+            <div class="service-offer__block">
+               <div class="service-offer__icon service-offer__icon--mic">
+                  <img src="./../img/iconpics/mic.svg" alt="mic">
+               </div>
+               <h3 class="service-offer__title">Local Events</h3>
+               <div class="service-offer__text">Barton vanity itself do in it. Preferd to men it engrossed listening.</div>
+            </div>
+            <div class="service-offer__block">
+               <div class="service-offer__icon service-offer__icon--supply">
+                  <img src="./../img/iconpics/power-supply.svg" alt="supply">
+               </div>
+               <h3 class="service-offer__title">Customization</h3>
+               <div class="service-offer__text">We deliver outsourced
+               aviation services for
+               military customers</div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+         <div class="destinations">
+   <div class="container">
+      <div class="destinations__body">
+         <div class="destinations__suptitle suptitle">Top Selling</div>
+         <h2 class="destinations__title title">Top Destinations</h2>
+         <div class="destinations__cards">
+            <a href="#!" class="card">
+               <img src="./../img/rome.png" alt="rome">
+               <div class="card-info">
+                  <div class="card-info__destination-info">
+                     <h3 class="card-info__title">Rome, Italty</h3>
+                     <div class="card-info__price">$ 5,4k</div>
+                  </div>
+                  <div class="card-info__time icon-navigation">10 Days Trip</div>
+               </div>
+            </a>
+            <a href="#!" class="card">
+               <img src="./../img/london.jpeg" alt="london">
+               <div class="card-info">
+                  <div class="card-info__destination-info">
+                     <h3 class="card-info__title">London, UK</h3>
+                     <div class="card-info__price">$ 4,2k</div>
+                  </div>
+                  <div class="card-info__time icon-navigation">12 Days Trip</div>
+               </div>
+            </a>
+            <a href="#!" class="card">
+               <img src="./../img/europe.png" alt="europe">
+               <div class="card-info">
+                  <div class="card-info__destination-info">
+                     <h3 class="card-info__title">Full Europe</h3>
+                     <div class="card-info__price">$ 15k</div>
+                  </div>
+                  <div class="card-info__time icon-navigation">28 Days Trip</div>
+               </div>
+            </a>
+         </div>
+      </div>
+   </div>
+</div>
+         <div class="howtobook">
+   <div class="container">
+      <div class="howtobook__body">
+         <div class="howtobook__columns column-howtobook">
+            <div class="column-howtobook__info-content info-content">
+               <div class="info-content__suptitle suptitle">Easy and Fast</div>
+               <h2 class="info-content__title title">Book your next trip
+                  in 3 easy steps</h2>
+               <div class="info-content__steps step">
+                  <div class="step">
+                     <div class="step__icon icon-selection"></div>
+                     <div class="step__block">
+                        <h3 class="step__title">Choose Destination</h3>
+                        <div class="step__text">Lorem ipsum dolor sit amet, consectetur
+                           adipiscing elit. Urna, tortor tempus.</div>
+                     </div>
+                  </div>
+                  <div class="step">
+                     <div class="step__icon icon-water-sport"></div>
+                     <div class="step__block">
+                        <h3 class="step__title">Make Payment</h3>
+                        <div class="step__text">Lorem ipsum dolor sit amet, consectetur
+                           adipiscing elit. Urna, tortor tempus.</div>
+                     </div>
+                  </div>
+                  <div class="step">
+                     <div class="step__icon icon-taxi"></div>
+                     <div class="step__block">
+                        <h3 class="step__title">Reach Airport on Selected Date</h3>
+                        <div class="step__text">Lorem ipsum dolor sit amet, consectetur
+                           adipiscing elit. Urna, tortor tempus.</div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="column-howtobook__info-block info-block">
+               <div class="info-block__body">
+                  <img src="./../img/greece-girl.jpeg" alt="image" class="info-block__image">
+                  <h4 class="info-block__title">Trip To Greece</h4>
+                  <div class="info-block__date">14-29 June | by Robbin joseph</div>
+                  <div class="info-block__info-icons info-icons">
+                     <div class="info-icons__leaf icon-leaf"></div>
+                     <div class="info-icons__map icon-map"></div>
+                     <div class="info-icons__send icon-send"></div>
+                  </div>
+                  <div class="info-icons__trip-info trip-info">
+                     <div class="trip-info__people icon-building">24 people going</div>
+                     <button type="submit" class="trip-info__like icon-heart">
+                        <div class="trip-info__like-body like-body">
+                           <div class="like-body__body">
+                              <div class="like-body__img">
+                                 <img src="./../img/ongoing/greece.jpg" alt="pic">
+                              </div>
+                              <div class="like-body__hover-content hover-content">
+                                 <div class="hover-content__suttitle">Ongoing</div>
+                                 <h5 class="hover-content__title">Trip to Greece</h5>
+                                 <div class="hover-content__complet"><span>40%</span> completed</div>
+                                 <div class="hover-content__complet-line"></div>
+                              </div>
+                           </div>
+                        </div>
+                     </button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+         <div class="feedback">
+   <div class="container">
+      <div class="feedback__columns column-feedback">
+         <div class="column-feedback__content">
+            <div class="column-feedback__suptitle suptitle">Testimonials</div>
+            <h2 class="column-feedback__title title">What people say about Us.</h2>
+         </div>
+         <!-- <div class="column-feedback__sliders slider-feedback">
+            <div class="slider-feedback__feedbacks">
+               <div class="slider-feedback__body">
+                  <div class="slider-feedback__avatar">
+                     <img src="./../img/avatars/01.png" alt="avatar">
+                  </div>
+                  <div class="slider-feedback__text-block">“Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Excepturi nam cum optio iusto. Sed, hic.”</div>
+                  <div class="slider-feedback__sign">
+                     <div class="slider-feedback__name">Mike Taylor</div>
+                     <div class="slider-feedback__location">london, england</div>
+                  </div>
+               </div>
+               <div class="slider-feedback__body">
+                  <div class="slider-feedback__avatar">
+                     <img src="./../img/avatars/02.jpeg" alt="avatar">
+                  </div>
+                  <div class="slider-feedback__text-block">“Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Incidunt ipsum temporibus totam atque. Nostrum voluptates quas officiis earum deserunt saepe iusto
+                     ullam, repudiandae sit harum.”</div>
+                  <div class="slider-feedback__sign">
+                     <div class="slider-feedback__name">Steve Mitchel</div>
+                     <div class="slider-feedback__location">Sidney, Australia</div>
+                  </div>
+               </div>
+            </div>
+            <div class="slider-feedback__pagination"></div>
+            <div class="slider-feedback__navigation navigation">
+               <button id="slidePrev" class="navigation__prev icon-up"></button>
+               <button id="slideNext" class="navigation__next icon-down"></button>
+            </div>
+         </div> -->
+         <!-- Slider main container -->
+<div class="swiper">
+   <!-- Additional required wrapper -->
+   <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide">
+         <div class="swiper-slide__avatar">
+            <img src="./../img/avatars/01.png" alt="avatar">
+         </div>
+         <div class="swiper-slide__text-block">“Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Incidunt ipsum temporibus totam atque. Nostrum voluptates quas officiis earum deserunt saepe iusto
+            ullam, repudiandae sit harum.”</div>
+         <div class="swiper-slide__sign">
+            <div class="swiper-slide__name">Steve Mitchel</div>
+            <div class="swiper-slide__location">Sidney, Australia</div>
+         </div>
+      </div>
+
+      <div class="swiper-slide">
+         <div class="swiper-slide__avatar">
+            <img src="./../img/avatars/02.jpeg" alt="avatar">
+         </div>
+         <div class="swiper-slide__text-block">“Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Excepturi nam cum optio iusto. Sed, hic.”</div>
+         <div class="swiper-slide__sign">
+            <div class="swiper-slide__name">Mike Taylor</div>
+            <div class="swiper-slide__location">london, england</div>
+         </div>
+      </div>
+
+      <div class="swiper-slide">
+         <div class="swiper-slide__avatar">
+            <img src="./../img/avatars/03.jpeg" alt="avatar">
+         </div>
+         <div class="swiper-slide__text-block">“Lorem ipsum dolor sit amet consectetur adipisicing elit. Est odio sint
+            voluptatem omnis molestias quas dolores, quisquam neque asperiores expedita veniam quos dolorem laudantium
+            porro amet vero totam facere pariatur aliquid odit natus voluptate. Eveniet, ratione! Dolorum commodi,
+            ipsum, distinctio quod neque quaerat maiores eos pariatur perferendis adipisci delectus magnam!”</div>
+         <div class="swiper-slide__sign">
+            <div class="swiper-slide__name">Lucia Sánchez</div>
+            <div class="swiper-slide__location">Valencia, Spane</div>
+         </div>
+      </div>
+   </div>
+
+   <!-- If we need pagination -->
+   <div class="swiper-pagination"></div>
+
+   <!-- If we need navigation buttons -->
+   <div class="swiper-navigation">
+      <button class="swiper-navigation__prev icon-up"></button>
+      <button class="swiper-navigation__next icon-down"></button>
+   </div>
+
+
+   <!-- If we need scrollbar -->
+   <!-- <div class="swiper-scrollbar"></div> -->
+</div>
+      </div>
+   </div>
+</div>
+         <div class="brands">
+   <div class="container">
+      <div class="brands__body">
+         <img src="./../img/brands/axon.png" alt="brand">
+         <img src="./../img/brands/jetstar.png" alt="brand">
+         <img src="./../img/brands/expedia.png" alt="brand">
+         <img src="./../img/brands/qantas.png" alt="brand">
+         <img src="./../img/brands/italia.png" alt="brand">
+      </div>
+   </div>
+</div>
+         <div class="subscribe">
+   <div class="container">
+      <div class="subscribe__body">
+         <div class="subscribe__icon icon-send"></div>
+         <h2 class="subscribe__title">Subscribe to get information, latest news and other
+            interesting offers about Jadoo</h2>
+         <form action="#!" class="subscribe__form">
+            <input type="email" name="email" class="subscribe__input icon-mail" placeholder="Your mail">
+            <button type="submit" class="subscribe__btn">Subscribe</button>
+         </form>
+      </div>
+   </div>
+</div>
+      </main>
+      <footer class="footer">
+   <div class="container">
+      <div class="footer__body">
+         <div class="footer__content">
+            <div class="footer__logo logo" data-da=".footer__body,991.98,first">
+               <img src="./../img/logo.svg" alt="logo">
+               <p class="footer__text">Book your trip in minute, get full control for much longer.</p>
+            </div>
+            <div class="footer__columns column-footer">
+               <div class="column-footer__company">
+                  <h3 class="column-footer__title">Company</h3>
+                  <nav class="column-footer__nav">
+                     <ul class="column-footer__list">
+                        <li class="column-footer__item"><a href="#!" class="column-footer__link">About</a></li>
+                        <li class="column-footer__item"><a href="#!" class="column-footer__link">Careers</a></li>
+                        <li class="column-footer__item"><a href="#!" class="column-footer__link">Mobile</a></li>
+                     </ul>
+                  </nav>
+               </div>
+               <div class="column-footer__contact">
+                  <h3 class="column-footer__title">Contact</h3>
+                  <nav class="column-footer__nav">
+                     <ul class="column-footer__list">
+                        <li class="column-footer__item"><a href="#!" class="column-footer__link">Help/FAQut</a></li>
+                        <li class="column-footer__item"><a href="#!" class="column-footer__link">Presseers</a></li>
+                        <li class="column-footer__item"><a href="#!" class="column-footer__link">Affilates</a></li>
+                     </ul>
+                  </nav>
+               </div>
+               <div class="column-footer__more">
+                  <h3 class="column-footer__title">More</h3>
+                  <nav class="column-footer__nav">
+                     <ul class="column-footer__list">
+                        <li class="column-footer__item"><a href="#!" class="column-footer__link">Airlinefees</a></li>
+                        <li class="column-footer__item"><a href="#!" class="column-footer__link">Airline</a></li>
+                        <li class="column-footer__item"><a href="#!" class="column-footer__link">Low fare tips</a></li>
+                     </ul>
+                  </nav>
+               </div>
+            </div>
+            <div class="footer__socials" data-da=".footer__body,991.98,last">
+               <div class="footer__socials-icons social-icon">
+                  <a href="#!" class="social-icon__facebook icon-facebook"></a>
+                  <a href="#!" class="social-icon__instagram icon-instagram"></a>
+                  <a href="#!" class="social-icon__twitter icon-twitter"></a>
+               </div>
+               <div class="footer__socials-title">Discover our app</div>
+               <div class="footer__socials-links social-link">
+                  <a href="#!" class="social-link__android">
+                     <div class="android__logo icon-googleplay"></div>
+                     <div class="android__text">Get it on <span>google play</span></div>
+                  </a>
+                  <a href="#!" class="social-link__apple">
+                     <div class="apple__logo icon-apple"></div>
+                     <div class="apple__text">avalible in the <span>apple store</span></div>
+                  </a>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="footer__rights">
+         All rights reserved <a href="https://shorturl.at/nrJPQ" target="_blank" class="footer__rights-link">@jadoo.co</a>
+      </div>
+   </div>
+</footer>
+   </div>
+   <script src="./js/index.bundle.js"></script>
+</body>
+
+</html>
